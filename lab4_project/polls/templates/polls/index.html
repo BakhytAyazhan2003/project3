@@ -1,0 +1,18 @@
+<h3>Customer Form</h3>
+<hr>
+<div>
+
+    {% for message in messages %}
+
+        {{ message }}
+    {% endfor %}
+
+</div>
+<form action="" method="post">
+
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="register">
+
+
+</form>
